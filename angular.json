@@ -2,6 +2,19 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
+  "cli": {
+    "analytics": false,
+    "cache": {
+      "enabled": true,
+      "environment": "all",
+    }
+  },
+  "schematics": {
+    "@schematics/angular:component": {
+      "changeDetection": "OnPush",
+      "inlineStyle": true,
+    }
+  },
   "projects": {
     "strategy-pattern": {
       "projectType": "application",
